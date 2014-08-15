@@ -54,9 +54,11 @@ var magnifier = (function(magnifyingLevel, mouseOverImgWidth, imgPath, cursorWid
 
   };
 
+  
+
+  
+
 })(5, 400, "gnome-compressed.jpg", 32, 32);
-
-
 
 $('.mouseover').on( "mousemove", function( event ) {
   magnifier.getCoordinates(event);
@@ -73,6 +75,8 @@ $('.mouseover').on( "mouseleave", function( event ) {
   magnifier.setMagnifyingOutputSize();
 
 })();
+
+
 
 
 
