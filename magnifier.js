@@ -1,3 +1,5 @@
+//h3llo yo
+
 var magnifier = (function(magnifyingLevel, mouseOverImgWidth, imgPath, cursorWidth, cursorHeight) {
 
   var mouseOverImgWidthWithPx = mouseOverImgWidth + "px";
