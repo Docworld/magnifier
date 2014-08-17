@@ -12,6 +12,10 @@
     border:1px solid #ccc;
 }
 
+h1 {
+	clear:both;
+	font-size:1rem;
+}
 
 
 

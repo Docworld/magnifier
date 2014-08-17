@@ -6,8 +6,8 @@
   var magnifiedImgWidth = (mouseOverImgWidth * magnifyingLevel) + "px";
   
   
-  // This next variable stores the coordinates of our mouseover div in relation to the document. 
-  // We'll use it to calculate the position of our mouse within that div in our getCoordinates function.
+  // This next variable stores the coordinates of the mouseover div in relation to the document. 
+  // We'll use it to calculate the position of the user's mouse within that div in our getCoordinates function.
   var pictureOffset = $('.mouseover').offset(); 
   
   
@@ -22,7 +22,7 @@
     var bigImageXCoord = (mouseXCoord * magnifyingLevel) + "px";
     var bigImageYCoord = (mouseYCoord * magnifyingLevel) + "px";
     displayMagnifiedImage(bigImageXCoord, bigImageYCoord);
-  }
+  };
 
 
   
@@ -50,7 +50,7 @@
   function hideMagnifiedImage () {
       "use strict;"
       $('#magnified-img').css({"background-image": "none"});
-    }
+    };
 
  
 
@@ -68,8 +68,18 @@
   setMagnifyingOutputSize();
 
 
+// Pass in your parameters here to customize to your liking.
+//PARAMETERS:
+//1. The script uses jQuery, so you'll need to pass it in.
+//2. The magnifying level--the factor by which you want your image to be magnified by.
+//3. The width that you want your 'mouseover' image to be displayed at. This is the image
+//   the user will mouse over.
+//4. The path to your image.
+//5. The width of your custom cursor image.
+//6. The height of your custom cursor image.
 
-}(jQuery, 5, 400, "gnome.jpg", 32, 32));
+
+}(jQuery, 5, 400, "gnome.jpg", 32, 32));  
 
 
 
